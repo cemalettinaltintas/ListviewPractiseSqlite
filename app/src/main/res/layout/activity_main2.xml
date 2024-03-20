@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:layout_margin="15dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ID"
+        android:textSize="20sp"
+        android:id="@+id/idTextView"
+        android:layout_marginBottom="5dp"
+        ></TextView>
+
+    <EditText
+        android:id="@+id/idText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/idTextView"
+        android:layout_marginBottom="5dp"
+        android:textSize="20sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textSize="20sp"
+        android:layout_below="@+id/idText"
+        android:id="@+id/nameTexView"
+        android:layout_marginBottom="5dp"
+        ></TextView>
+
+    <EditText
+        android:id="@+id/nameText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/nameTexView"
+        android:layout_marginBottom="5dp"
+        android:textSize="20sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Age"
+        android:textSize="20sp"
+        android:layout_below="@+id/nameText"
+        android:id="@+id/ageTexView"
+        android:layout_marginBottom="5dp"
+        ></TextView>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/ageText"
+        android:layout_below="@id/ageTexView"
+        android:layout_marginBottom="5dp"
+        android:textSize="20sp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/updateButton"
+        android:layout_below="@id/ageText"
+        android:textSize="20sp"
+        android:text="Update"
+        android:layout_marginBottom="5dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/deleteButton"
+        android:layout_below="@id/updateButton"
+        android:textSize="20sp"
+        android:text="Delete" />
+</RelativeLayout>
